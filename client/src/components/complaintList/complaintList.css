@@ -1,0 +1,173 @@
+.complaint-list {
+  /* Use your preferred color scheme */
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px; /* Adjust padding if needed */
+}
+
+.complaint-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.complaint-item:hover {
+  /* Use a lighter shade for hover effect */
+  background-color: #eee;
+}
+
+.complaint-details {
+  display: flex;
+  align-items: center;
+}
+
+.complaint-id {
+  color: #d11212/* Use a subdued color for ID */;
+  font-weight: lighter;
+  margin-right: 10px;
+}
+
+.complaint-title {
+  /* Choose a professional font for titles */
+  font-weight: bold;
+}
+
+.complaint-status {
+  /* Choose a color to highlight the status */
+  font-weight: bold;
+}
+
+.complaint-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 1000px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.complaint-dialog h3 {
+  margin-bottom: 10px;
+  /* Use a professional font for headings */
+}
+
+.complaint-dialog p {
+  margin-bottom: 15px;
+  /* Choose a font for body text */
+}
+
+.idialog{
+  z-index: 9999;
+}
+
+/* .dialog-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+} */
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  justify-items: center;
+}
+
+.loader-container{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-button {
+  /* Consider using a button library for styles */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  /* Replace with your color scheme for buttons */
+  background-color: #333;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.action-button:hover {
+  /* Adjust hover effect based on chosen button style */
+  background-color: #222;
+}
+/* Add CSS for action button icons (replace placeholders) */
+.action-button-approve::before {
+  content: "\f00c"; /* Replace with appropriate icon code (e.g., from Font Awesome) */
+}
+
+.back-btn{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.table td {
+  font-size: 15px; /* Set font size to 16 pixels */
+  font-weight: bold; /* Set font weight to bold */
+  font-family: "Arial", sans-serif; /* Use a professional font style */
+}
+
+.view-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.table{
+  border: 1px solid red;
+  height: auto;
+  width: 75dvw;
+  margin: 0 auto;
+}
+
+.close-button{
+  margin: auto;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+#sl{
+  width: 10%;
+}
+#ac{
+  width: 18%;
+}
+th{
+  padding: 10px;
+  background-color: #1877f2; /* Facebook blue */
+    color: #fff; /* White */
+}
+
+tr{
+  padding: 10px;
+  
+}
+td{
+  padding: 10px;
+  text-align: center;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey for even rows */
+}

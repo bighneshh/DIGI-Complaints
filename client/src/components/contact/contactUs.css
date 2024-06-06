@@ -1,0 +1,18 @@
+.block{
+    height: 100dvh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+    /* box-shadow: 4px 4px  #0077B5; */
+    background: rgba(0, 0, 0, 0.582) url('backg1.jpg') center center fixed;
+    background-blend-mode: darken;    
+}
+
+
+@media screen and (max-width: 768px) {
+    .block{
+      width: 100%;
+    } 
+}

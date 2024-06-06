@@ -1,0 +1,102 @@
+.total_about_container{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.655) url('backg.webp') center center fixed;
+    background-blend-mode: darken;
+    background-size: cover;
+  }
+  .about_container{
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .side-box{
+    border: 2px solid rgba(255, 255, 255, .2);
+    /* box-shadow: 4px 4px  #0077B5; */
+    height: 260px;
+    width: 46%;
+    text-align: center;
+    background-color: #1c1a1a2a;
+    /* padding: 1vw; */
+    border-radius: 10px;
+  }
+  .about_text{
+    font-size: 15px;
+  }
+  .about_main_heading{
+    margin-top: -55px;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f8f5f5e3;
+    text-shadow: 2px 2px 4px rgba(8, 139, 179, 0.636);
+  }
+  .about_header{
+    margin-top: 45px;
+    padding-bottom: 15px;
+    font-size: 24px;
+    color: #0077B5;
+    text-shadow: 2px 2px 4px rgba(247, 248, 248, 0.31);
+    font-weight: 600;
+  }
+  .side-box:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    background-color: #d7d7d71c;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  }
+  .side-box .about_text{
+    color: #f7f7f7;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .side-box:hover .about_text{
+    color: #fdfbfb;
+  }
+  .side-box:hover .about_header{
+    color: #fd0606;
+  }
+  @media screen and (max-width: 768px) {
+    
+    .about_container{
+    flex-direction: column;
+    }
+    .about_header{
+      font-size: 20px;
+    }
+    .about_text{
+      font-size: 14px;
+    }
+    .side-box{
+      width: 100%;
+    }
+    .about_main_heading{
+    font-size: 24px;  
+    }
+    
+  }
+  @media screen and (max-width: 484px) {
+    
+    .about_container{
+    flex-direction: column;
+    width: 90%;
+    }
+    .about_header{
+      font-size: 17px;
+    }
+    .about_text{
+      font-size: 12px;
+    }
+    .about_main_heading{
+      font-size: 18px;  
+      }
+    
+  }

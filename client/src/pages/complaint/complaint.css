@@ -1,0 +1,96 @@
+.create-complaint-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: linear-gradient(135deg, #5ebeee, #084c9b); */
+  background-image: url('../complaint/backg1.jpg');
+  background-size: contain;
+
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Adjust width for smaller screens */
+  max-width: 350px; /* Max width for larger screens */
+  margin-top: 20px;
+}
+
+.complaint-form-container {
+  max-width: 600px;
+  width: 90%; /* Adjust width for smaller screens */
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.loader-container{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-heading {
+  font-size: 1.75rem;
+  border-bottom: 2px solid rgb(255, 0, 43);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.complaint-submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.complaint-submit-button:hover {
+  background-color: #0056b3;
+  width: 100%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 350px; /* Max width for larger screens */
+  }
+
+  .complaint-form-container {
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
